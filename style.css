@@ -1,0 +1,94 @@
+/* General style */
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: beige;
+}
+div.container{
+    border: 5px solid rgb(91, 129, 35);
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+
+/* CSS by ID */
+#container{
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#photo{
+    width: 2400px;
+    animation:switch 5s ease-out infinite;
+}
+#photo > img{
+    float:left;
+    width: 800px;
+    height:600px;
+}
+/* CSS by class */
+.bottomImage{
+    width: 100%;
+    height: 100%;
+}
+.bottomColumn{
+    width: 50%;
+}
+.imageDiv{
+    width: 100%;
+    height: 50%;
+}
+
+/* Animation */
+@keyframes switch{
+    0%, 25%{
+            margin-left: 0;
+    }
+    35%, 60%{
+            margin-left: -800px;
+    }
+    70%, 100%{
+            margin-left: -1600px;
+    }
+}
+
+aside{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: rgb(88, 143, 82);
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    width: 150px;
+    border: 2px solid rgb(77, 66, 53);
+    line-height: 3em;
+    font-family: 'Gill sans', 'Gill sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    color:aliceblue;
+    text-decoration: none;
+    border: 1px solid rgb(77, 78, 62);
+    display: block;
+    
+}
+
+footer{
+    background-color: rgb(139, 203, 122);
+    width: 80%;
+    margin: 0 auto 0 auto;
+    border: dotted rgb(44, 66, 40);
+}
